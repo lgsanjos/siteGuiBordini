@@ -151,7 +151,7 @@ a:hover {
 
 #sidebar1 h2 {
 	text-align: left;
-	background: url(../images/img06.jpg) no-repeat left top;
+	/*background: url(../images/img06.jpg) no-repeat left top;*/
 	padding: 5px 0 0 40px;
 	font-size: 22px;
 }
@@ -169,7 +169,7 @@ a:hover {
 }
 
 #sidebar2 h2 {
-	background: url(../images/img06.gif) no-repeat;
+	/*background: url(../images/img06.gif) no-repeat;*/
 }
 
 /* Search */
