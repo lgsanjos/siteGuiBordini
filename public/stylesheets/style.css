@@ -278,10 +278,12 @@ a:hover {
 
 #content .bgbtm {
 	background: url(../images/img04.jpg) no-repeat left bottom;
+
 }
 
 .post {
-	padding: 200px 25px 10px 25px;
+	padding: 200px 30px 30px 30px;
+
 }
 
 .post .title {
@@ -313,6 +315,10 @@ a:hover {
 .post .tags {
 	padding-top: 10px;
 	border-top: 1px dashed #D9EBFF;
+}
+
+.post .keyword{
+        color: #E58C43;
 }
 
 /* Footer */

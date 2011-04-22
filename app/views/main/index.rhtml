@@ -22,7 +22,7 @@ Released   : 20080524
 <body>
 	<div id="logo">
 		<h1><a href="#">Dr. Guilherme Bordini </a></h1>
-		<h2>Dentista - Clínico geral e ortodontia</h2>
+		<!--h2>Dentista - Clínico geral e ortodontia</h2-->
 	</div>
 <!-- end #header -->
 <div id="page">
@@ -50,26 +50,8 @@ Released   : 20080524
 	<div class="bgtop">
 	<div class="bgbtm">
 		<div class="post">
-			<h1 class="title"><a href="#" rel="bookmark" title="Permanent Link to About This Template">About This Template</a></h1>
-			<div class="entry">
-				<p><strong>Compressed </strong> is a free, fully standards-compliant CSS template designed by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>. The dog photo is from <a href="http://www.pdphoto.org/">PDPhoto.org</a>. This free template is released under a <a href="http://creativecommons.org/licenses/by/2.5/">Creative Commons Attributions 2.5</a> license, so you’re pretty much free to do whatever you want with it  (even use it commercially) provided you keep the links in the footer  intact. Have fun with it :)</p>
-				<p>This template is also available as a <a href="http://www.freewpthemes.net/preview/Compressed ">WordPress theme</a> at <a href="http://www.freewpthemes.net/">Free WordPress Themes</a>.</p>
-				<h2>A Heading Level 2</h2>
-				<p>This paragraph is followed by a sample unordered list:</p>
-				<ul>
-					<li><a href="#">Consectetuer adipiscing elit</a></li>
-					<li><a href="#">Metus aliquam pellentesque</a></li>
-					<li><a href="#">Urnanet non molestie semper</a></li>
-					<li><a href="#">Proin gravida orci porttitor</a></li>
-				</ul>
-				<h3>Heading Level 3</h3>
-				<p>While this one is followed by a blockquote:</p>
-				<blockquote>
-					<p>&ldquo;Donec leo, vivamus nibh in augue praesent a lacus at  urna congue rutrum. Quisque dictum integer nisl risus, sagittis  convallis, rutrum id, congue, and nibh.&rdquo;</p>
-				</blockquote>
-			</div>
-			<!--p class="tags"><strong>Tags: </strong><a href="#">vivamus</a> <a href="#">nibh</a> <a href="#">in augue</a> <a href="#">praesent</a></p>
-			<p class="links">Posted in <a href="#" title="View all posts in Free WP Themes" rel="category">Uncategorized</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="#" title="Edit post">Edit</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="#" title="Comment on About This Theme">4 Comments</a></p-->
+                  <%= render :partial => "conteudoMain" %>
+
 		</div>
 	</div>
 	</div>
@@ -77,23 +59,20 @@ Released   : 20080524
 <!-- end content -->
 	<!-- start sidebar2 -->
 	<div id="sidebar2" class="sidebar">
-		<ul>
-			<li id="recent-posts">
-                          <h2>Contato</h2>
 				<ul>
 					<li>
-						<h3>Endereço</h3>
+                                                <h2>Endereço</h2>
                                                 <p>
                                                   Av. Tiradentes n&ordm; 345<br/>
                                                   Maringá - Paraná<br/>
                                                   <a href="#">Mapa</a>
                                                 </p>
-                                                <h3>Telefone</h3>
+                                                <h2>Telefone</h2>
                                                 <p>
                                                   Clínica: (044) 3025-5911<br />
                                                   Emergência: (044) 3025-5911
                                                 </p>
-                                                <h3>E-mail</h3>
+                                                <h2>E-mail</h2>
                                                 <p>
                                                   contato@guilhermebordini.com<br />
                                                   contato@guilhermebordini.com<br />
@@ -101,8 +80,7 @@ Released   : 20080524
                                                 </p>
 					</li>
 				</ul>
-			</li>
-		</ul>
+
 	</div>
 	<!-- end sidebar2 -->
 	<div style="clear: both;">&nbsp;</div>
