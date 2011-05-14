@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Compressed
+Description: A three-column, fixed-width template fit for 1024x768 screen resolutions.
+Version    : 1.0
+Released   : 20080524
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Dr. Guilherme Bordini</title>
+<meta name="keywords" content="Dr. Guilherme Bordini Dentista odontologia clinico geral maringá maringa" />
+<meta name="description" content="Dr. Guilherme Bordini - Maringá Pr" />
+<%= stylesheet_link_tag "style" %>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+	<div id="logo">
+		<h1><a href="#">Dr. Guilherme Bordini </a></h1>
+		<!--h2>Dentista - Clínico geral e ortodontia</h2-->
+	</div>
+<!-- end #header -->
+<div id="page">
+	<!-- start sidebar1 -->
+	<div id="sidebar1" class="sidebar">
+		<ul>
+			<li id="search">
+                          <%= image_tag "guilherme_perfil.jpg", :size => "190x284" %>
+			</li>
+			<li>
+				<h2>Menu</h2>
+				<ul>
+					<li><%=link_to "Início", { :action => :index } , { :title => "Página inicial" } %></li>
+					<li><%=link_to "Currículum", { :action => :curriculum }, { :title => "Confira o currículum do Guilherme"}%></li>
+					<li><%=link_to "Curiosidades", { :action => :curiosidades }, { :title => "Curiosidades da odontologia"}%></li>
+                                        <li><%=link_to "Contato", { :action => :contato }, { :title => "Endereço e formas de contato"}%></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- end sidebar1 -->
+	<!-- start content -->
+	<div id="content">
+          <div class="bgtop">
+            <div class="bgbtm">
+                    <div class="post">
+                      <%= yield %>
+                    </div>
+            </div>
+          </div>
+	</div>
+<!-- end content -->
+	<!-- start sidebar2 -->
+	<div id="sidebar2" class="sidebar">
+          <ul>
+            <li>
+              <% unless controller.action_name == "contato"  %>
+                <%= render :layout => "contato" %>
+              <% end %>
+            </li>
+          </ul>
+
+	</div>
+	<!-- end sidebar2 -->
+	<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end page -->
+<div id="footer">
+	<p class="legal">&copy;2011 Guilherme Bordini - Todos os direitos reservados. &nbsp; by <a href="http://www.sasolucoes.com.br/">SA Soluções</a></p>
+</div>
+</body>
+</html>
