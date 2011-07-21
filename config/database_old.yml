@@ -14,9 +14,6 @@ test:
 
 production:
   adapter: mysql
-  socket: /var/run/mysqld/mysqld.sock
-  encoding: utf8
-  reconnect: false
   host: mysql.guilhermebordini.com
   database: guibordini
   pool: 5
