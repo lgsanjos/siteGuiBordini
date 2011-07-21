@@ -16,4 +16,8 @@ class MainController < ApplicationController
 
   end
   
+  def clinica
+
+  end  
+  
 end
